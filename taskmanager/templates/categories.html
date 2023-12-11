@@ -24,7 +24,7 @@
                 <!-- Modal -->
                 <div id="modal{{ category.id }}" class="modal">
                     <div class="modal-content">
-                        <h4>Are you sure you want to delete the category ?</h4>
+                        <h4>Are you sure you want to delete the category {{ category.category_name }}?</h4>
                     </div>
                     <div class="modal-footer">
                         <a href="{{ url_for('delete_category', category_id=category.id) }}" class="btn green accent-4">Yes</a>

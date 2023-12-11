@@ -6,10 +6,13 @@ document.addEventListener('DOMContentLoaded', function () {
     var modals = document.querySelectorAll(".modal");
     console.log(modals);
     M.Modal.init(modals);
-});
 
-// Or with jQuery
+    var datepicker = document.querySelectorAll('.datepicker');
+    M.Datepicker.init(datepicker, {
+        format: "dd mmm, yyyy",
+        i18n: { done: "Select" }
+    });
 
-$(document).ready(function () {
-    $('.sidenav').sidenav();
+    let selects = document.querySelectorAll('select');
+    M.FormSelect.init(selects);
 });
